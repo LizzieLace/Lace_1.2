@@ -1,0 +1,298 @@
+@tailwind components;
+@tailwind utilities;
+
+/* Ador Hairline font face definitions */
+@font-face {
+  font-family: 'Ador Hairline';
+  src: url('/fonts/AdorHairline-ExtraLight_1750125033142.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ador Hairline';
+  src: url('/fonts/AdorHairline-ExtraLight-Italic_1750125033150.otf') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ador Hairline';
+  src: url('/fonts/AdorHairline-Light_1750125033147.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ador Hairline';
+  src: url('/fonts/AdorHairline-Light-Italic_1750125033152.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ador Hairline';
+  src: url('/fonts/AdorHairline-Regular_1750125033148.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ador Hairline';
+  src: url('/fonts/AdorHairline-Italic_1750125033151.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ador Hairline';
+  src: url('/fonts/AdorHairline-Medium_1750125033147.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ador Hairline';
+  src: url('/fonts/AdorHairline-Medium-Italic_1750125033153.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ador Hairline';
+  src: url('/fonts/AdorHairline-Bold_1750125033156.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ador Hairline';
+  src: url('/fonts/AdorHairline-Bold-Italic_1750125033154.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ador Hairline';
+  src: url('/fonts/AdorHairline-ExtraBold_1750125033157.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ador Hairline';
+  src: url('/fonts/AdorHairline-ExtraBold-Italic_1750125033155.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ador Hairline';
+  src: url('/fonts/AdorHairline-Black_1750125033156.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ador Hairline';
+  src: url('/fonts/AdorHairline-Black-Italic_1750125033154.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+
+  /* Hide scrollbars while maintaining scroll functionality */
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .hide-scrollbar::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+  }
+}
+
+:root {
+  --avatar-initialsmd-font-family: "Roboto", Helvetica;
+  --avatar-initialsmd-font-size: 12px;
+  --avatar-initialsmd-font-style: normal;
+  --avatar-initialsmd-font-weight: 400;
+  --avatar-initialsmd-letter-spacing: 0px;
+  --avatar-initialsmd-line-height: 12px;
+  --avatar-initialssm-font-family: "Roboto", Helvetica;
+  --avatar-initialssm-font-size: 10px;
+  --avatar-initialssm-font-style: normal;
+  --avatar-initialssm-font-weight: 400;
+  --avatar-initialssm-letter-spacing: 0px;
+  --avatar-initialssm-line-height: 10px;
+  --body-small-font-family: "Inter", Helvetica;
+  --body-small-font-size: 14px;
+  --body-small-font-style: normal;
+  --body-small-font-weight: 400;
+  --body-small-letter-spacing: 0px;
+  --body-small-line-height: 140%;
+  --caption2-regular-font-family: "SF Pro", Helvetica;
+  --caption2-regular-font-size: 11px;
+  --caption2-regular-font-style: normal;
+  --caption2-regular-font-weight: 400;
+  --caption2-regular-letter-spacing: 0.05999999865889549px;
+  --caption2-regular-line-height: 13px;
+  --chip-label-font-family: "Roboto", Helvetica;
+  --chip-label-font-size: 13px;
+  --chip-label-font-style: normal;
+  --chip-label-font-weight: 400;
+  --chip-label-letter-spacing: 0.1599999964237213px;
+  --chip-label-line-height: 18px;
+  --drop-shadow-100: 0px 1px 4px 0px rgba(12, 12, 13, 0.05);
+  --footnote-regular-font-family: "SF Pro", Helvetica;
+  --footnote-regular-font-size: 13px;
+  --footnote-regular-font-style: normal;
+  --footnote-regular-font-weight: 400;
+  --footnote-regular-letter-spacing: -0.07999999821186066px;
+  --footnote-regular-line-height: 18px;
+  --graysgray: rgba(142, 142, 147, 1);
+  --graysgray-5: rgba(229, 229, 234, 1);
+  --m3-body-small-font-family: "Roboto", Helvetica;
+  --m3-body-small-font-size: 12px;
+  --m3-body-small-font-style: normal;
+  --m3-body-small-font-weight: 400;
+  --m3-body-small-letter-spacing: 0.4000000059604645px;
+  --m3-body-small-line-height: 16px;
+  --m3-label-large-emphasized-font-family: "Roboto", Helvetica;
+  --m3-label-large-emphasized-font-size: 14px;
+  --m3-label-large-emphasized-font-style: normal;
+  --m3-label-large-emphasized-font-weight: 600;
+  --m3-label-large-emphasized-letter-spacing: 0.10000000149011612px;
+  --m3-label-large-emphasized-line-height: 20px;
+  --m3-label-small-font-family: "Roboto", Helvetica;
+  --m3-label-small-font-size: 11px;
+  --m3-label-small-font-style: normal;
+  --m3-label-small-font-weight: 500;
+  --m3-label-small-letter-spacing: 0.5000000000000001px;
+  --m3-label-small-line-height: 16px;
+  --m3-title-medium-font-family: "Roboto", Helvetica;
+  --m3-title-medium-font-size: 16px;
+  --m3-title-medium-font-style: normal;
+  --m3-title-medium-font-weight: 500;
+  --m3-title-medium-letter-spacing: 0.15000000596046448px;
+  --m3-title-medium-line-height: 24px;
+  --text-sm-leading-5-normal-font-family: "Geist", Helvetica;
+  --text-sm-leading-5-normal-font-size: 14px;
+  --text-sm-leading-5-normal-font-style: normal;
+  --text-sm-leading-5-normal-font-weight: 400;
+  --text-sm-leading-5-normal-letter-spacing: 0px;
+  --text-sm-leading-5-normal-line-height: 20px;
+  --text-sm-leading-6-medium-font-family: "Geist", Helvetica;
+  --text-sm-leading-6-medium-font-size: 14px;
+  --text-sm-leading-6-medium-font-style: normal;
+  --text-sm-leading-6-medium-font-weight: 500;
+  --text-sm-leading-6-medium-letter-spacing: 0px;
+  --text-sm-leading-6-medium-line-height: 24px;
+  --text-xs-leading-4-semibold-font-family: "Geist", Helvetica;
+  --text-xs-leading-4-semibold-font-size: 12px;
+  --text-xs-leading-4-semibold-font-style: normal;
+  --text-xs-leading-4-semibold-font-weight: 600;
+  --text-xs-leading-4-semibold-letter-spacing: 0px;
+  --text-xs-leading-4-semibold-line-height: 16px;
+  --vibrant-labelsvibrant-secondary: rgba(127, 127, 127, 0.5);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
